@@ -11,3 +11,6 @@ Route::view('/', 'inicio') ->name('rutainicio');
 Route::view('/form','formulario') ->name('rutacacas');
 
 Route::view('/consultar','clientes') ->name('rutaconsulta');
+
+Route::view('/component','componentes') ->name('componentes');
+
