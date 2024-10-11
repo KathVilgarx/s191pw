@@ -1,3 +1,5 @@
-<div>
-    <!-- I begin to speak only when I am certain what I will say is not better left unsaid. - Cato the Younger -->
+<div class="container mt-4">
+    <div class="alert alert-{{$tipo}}" role="alert">
+        Soy un alert {{$slot}}
+    </div>
 </div>

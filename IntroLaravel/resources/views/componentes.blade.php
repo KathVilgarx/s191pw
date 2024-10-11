@@ -12,4 +12,7 @@
         Contenido de tarjeta 2
     </x-Card>
 
+    <x-Alert tipo="danger">Soy un alert ROJO</x-Alert>
+    <x-Alert tipo="warning">Soy un alert AMARILLO</x-Alert>
+
 @endsection
