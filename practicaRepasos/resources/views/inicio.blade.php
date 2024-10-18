@@ -31,6 +31,7 @@
     <p class="card-text">Grupo S-191</p>
     <p class="card-text">Katherine Andrea Villanueva Garcia</p>
     <p class="card-text">Mtro. Ivan Isay Guerra Lopez</p>
+    <button type="button" class="btn btn-dark">Repaso 1</button>
 
   </div>
 </div>
