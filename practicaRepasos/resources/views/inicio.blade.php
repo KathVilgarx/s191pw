@@ -9,6 +9,8 @@
       height: 100vh;
       display: grid;
       place-items: center; /* Centra horizontal y verticalmente */
+      background-image: url({{asset('img/novio.png')}});
+      background-size: cover;
     }
 
     .card {
@@ -19,25 +21,25 @@
       background-color: white;
       text-align: center;
     }
+
   </style>
 </head>
 <body>
-<div class="container">
-<div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="imagen random equisdededede">
-  <div class="card-body">
-    <h5 class="card-title">Repaso 1</h5>
-    <p class="card-text">Programacion Web</p>
-    <p class="card-text">Grupo S-191</p>
-    <p class="card-text">Katherine Andrea Villanueva Garcia</p>
-    <p class="card-text">Mtro. Ivan Isay Guerra Lopez</p>
-    <button type="button" class="btn btn-dark">Repaso 1</button>
+  <div class="d-flex flex-column justify-content-center align-items-center text-center full-height">
+    <div class="container">
+    <div class="card" style="width: 18rem;">
+  <!--   <img src="..." class="card-img-top" alt="imagen random equisdededede">-->    
+    <div class="card-body">
+        <h5 class="card-title">Repaso 1</h5>
+        <p class="card-text">Programacion Web</p>
+        <p class="card-text">Grupo S-191</p>
+        <p class="card-text">Katherine Andrea Villanueva Garcia</p>
+        <p class="card-text">Mtro. Ivan Isay Guerra Lopez</p>
+        <a href="{{route('rutaconv')}}" class="btn btn-dark">Repaso 1</a>
 
+      </div>
+    </div>
   </div>
-</div>
 
-
-
-<!---->
 </body>
 </html>
