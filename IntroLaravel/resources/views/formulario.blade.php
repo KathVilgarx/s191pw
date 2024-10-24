@@ -2,7 +2,28 @@
     @section('titulo','Formulario Clientes')
     @section('contenido')
         {{-- inicia Tarjeta con formulario --}}
+
             <div class="container mt-5 col-md-6">
+                {{--@dump($id)--}}
+
+                @if(session('Exito'))
+                <x-Alert tipo="success">{{session('Exito')}}</x-Alert>
+                @endif
+
+                @session('Exito')
+                <x-Alert tipo="warning">{{$value}}</x-Alert>
+                @endsession
+
+                @session('Exito')
+                <script>
+                    Swal.fire({
+                        title: "Respuesta del servidor",
+                        text: "{{$value}}",
+                        icon: "success"
+                    });
+                </script>
+                @endsession
+
                 <div class="card font-monospace">
                     <div class="card-header fs-5 text-center text-primary">
                         Registro de Clientes
