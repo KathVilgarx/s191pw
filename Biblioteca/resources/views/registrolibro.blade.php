@@ -3,13 +3,18 @@
     @section('contenido')
 
     <div class="container mt-5 col-md-6">
+
+        @if(session('exito'))
+        <x-alert tipo="success"> {{session('exito')}} </x-alert>
+        @endif
+
         <div class="card font-monospace">
             <div class="card-header fs-5 text-center text-warning">
                 {{__('Registro de Libros')}} 
             </div>
             <div class="card-body text-justify">
                 
-            <form method="POST" action="/enviarCliente">
+            <form method="POST" action="{{route ('rutavalidarlibro')}}">
                 @csrf 
                     <div class="mb-3">
                         <label for="nombre" class="form-label">{{__('ISBN')}}:</label>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\validadorLibro;
+
 
 class ControladorVistas extends Controller
 {
@@ -15,10 +17,9 @@ class ControladorVistas extends Controller
     }
 
     public function validarlibro(validadorLibro $peticion){
-        //redireccion enviando msj en session
-        $usuario= $peticion->input('txtnombre');
-        session()->flash('Exito', 'Se guardo al usuario '.$usuario);
+        $titulo= $peticion->input('txttitulo');
+        session()->flash('Exito', 'Se guardo el libro '.$titulo);
 
-        return to_route('rutacacas');
+        return redirect()->back();
     }
 }
