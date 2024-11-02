@@ -2,8 +2,9 @@
     @section('titulo','Registro de Libros')
     @section('contenido')
 
-    <div class="container mt-5 col-md-6">
-        <div class="card" style="width: 18rem;">
+    <div class="d-flex flex-column justify-content-center align-items-center text-center full-height"
+    style="min-height: 100vh; background-image: url('img/image.png'); background-size: cover; background-position: center;">
+        <div class="card" style="width: 40rem; margin-top: 10rem;">
         <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
             <h5 class="card-title">Festival de Tradiciones de Vida y Muerte en Xcaret</h5>
@@ -16,8 +17,8 @@
         </div>
         </div>
 
-        <div class="container mt-5 col-md-6">
-            <button type="button" class="btn btn-dark">Dark</button>
+        <div class="container">
+            <a href="{{route('rutaregistro')}}" type="button" class="btn btn-dark">Registrar un Libro</a>
         </div>
 
     </div>
