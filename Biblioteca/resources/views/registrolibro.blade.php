@@ -4,8 +4,8 @@
 
     <div class="container mt-5 col-md-6">
 
-        @if(session('exito'))
-        <x-alert tipo="success"> {{session('exito')}} </x-alert>
+        @if(session('exito')) 
+        <x-alert tipo="success"> {{ session('exito')}} </x-alert>
         @endif
 
         <div class="card font-monospace">

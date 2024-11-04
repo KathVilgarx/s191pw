@@ -18,7 +18,7 @@ class ControladorVistas extends Controller
 
     public function validarlibro(validadorLibro $peticion){
         $titulo= $peticion->input('txttitulo');
-        session()->flash('Exito', 'Se guardo el libro '.$titulo);
+        session()->flash('exito','Se guardo el libro '.$titulo.' con exito.');
 
         return redirect()->back();
     }
