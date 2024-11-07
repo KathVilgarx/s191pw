@@ -1,9 +1,12 @@
+<!-- Recuerda que esto se pone tal cual para jalar la plantilla
+ lo que va entre parentesis es el nombre de la plantilla -->
 @extends('layouts.plantilla1')
 
 @section('titulo', 'Componentes Blade')
 
 @section('contenido')
 
+    <!-- Aqui se colocan los valores que se van a mostrar -->
     <x-Card encabezado="componente 1" titulo="titulo 1" textoBoton="Guardar"> 
         Contenido de tarjeta 1
     </x-Card>

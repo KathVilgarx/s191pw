@@ -13,3 +13,7 @@
     </div>
 
     </div>
+
+    <!-- El encabezado, el titulo y el slot se colocan con ecos
+     lo que se coloca ahi que se va a mostrar esta en la vista del 
+     componente -->
