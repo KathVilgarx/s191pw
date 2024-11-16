@@ -30,7 +30,7 @@
                     </div>
                     <div class="card-body text-justify">
                         
-                    <form method="POST" action="/enviarCliente">
+                    <form method="POST" action="{{route('rutaenviar')}}">
                         @csrf 
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">{{__('Nombre')}}:</label>

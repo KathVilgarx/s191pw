@@ -10,25 +10,23 @@ use App\Http\Requests\validadorCliente;
 
 class clienteController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
+    public function home(){
+        return view('inicio');
     }
 
-    /**
-     * Sirve para abrir el formulario
-     */
+    public function index()
+    {
+        $consultaClientes= DB::table('cliente')->get();
+        return view('clientes', compact('consultaClientes'));
+    }
+
+    //Sirve para abrir el formulario
     public function create()
     {
         return view('formulario');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+    
     public function store(ValidadorCliente $request)
     {
         DB::table('cliente')->insert([
