@@ -13,7 +13,11 @@ Route::get('/cliente/create',[clienteController::class,'create'])->name('rutacac
 
 Route::post('/cliente',[clienteController::class,'store'])->name('rutaenviar');
 
+Route::get('/clientes/{id}/editar',[clienteController::class,'edit'])->name('editarcliente');
 
+Route::put('/clientes/{id}',[clienteController::class,'update'])->name('actualizarcliente');
+
+Route::delete('/clientes/{id}',[clienteController::class,'destroy'])->name('borrarcliente');
 
 
 
