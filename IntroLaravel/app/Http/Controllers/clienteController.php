@@ -75,8 +75,7 @@ class clienteController extends Controller
         ]);
 
         $usuario= $request->input('txtnombre');
-        return redirect()->route('rutaconsulta')->with('success','Se actualizo 
-        correctamente al cliente '. $usuario);
+        return redirect()->route('rutaconsulta')->with('success','Se actualizo correctamente al cliente '. $usuario);
     }
 
     /**
@@ -85,8 +84,7 @@ class clienteController extends Controller
     public function destroy(string $id)
     {
         DB::table('cliente')-> where('id', $id)-> delete();
-        return redirect()->route('rutaconsulta')->with('success','Se borro 
-        correctamente al cliente');
+        return redirect()->route('rutaconsulta')->with('success','Se borro correctamente al cliente');
 
     }
 }
